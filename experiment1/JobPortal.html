@@ -5,56 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JOB_PORTAL</title>
 </head>
-<body style="height: 100vh;margin:0;padding: 0;">
+<body style="height: 100vh;margin:0;padding: 0; font-family: Arial, sans-serif;">
     <div style=" height: 7%;min-height: 40px;background-color:#A8BBA3;">
         <nav style="display:flex; justify-content:space-between; align-items:center; padding: 10px;">
-            <span style="color:aquamarine; font-size:20px; font-weight:bold;">JOB_PORTAL</span>
+            <span style="color:white; font-size:20px; font-weight:bold;">JOB_PORTAL</span>
             <span style="display:flex; gap:20px;">
-                <a href="/home" style="text-decoration:none; color:aquamarine;"><b>Home</b></a>
-                <a href="/login" style="text-decoration:none; color:aquamarine;"><b>Login</b></a>
+                <a href="/home" style="text-decoration:none; color:white;"><b>Home</b></a>
+                <a href="/login" style="text-decoration:none; color:white;"><b>Login</b></a>
             </span>
         </nav>
     </div>
+
     <div style="display:flex; justify-content:center; align-items:center; height: 93%;background-color:#97A87A;">
         <form action="submit" style="width:40%; min-width:350px; background-color:white; padding:25px; border-radius:8px;">
              <h1 style="text-align:center; margin-bottom:20px;">Create your profile</h1>
+
             <div style="margin-bottom:15px;">
-                <label for="name" style="font-size:16px;">Full Name</label><br>
-                <input type="text" id="name" placeholder="Enter your full name"
-                    style="width:98%; padding:8px; margin-top:6px;">
+                <label for="fullname">Full Name</label><br>
+                <input type="text" id="fullname" placeholder="Enter your full name" required
+                    style="width:100%; padding:8px; margin-top:6px;">
             </div>
+
             <div style="margin-bottom:15px;">
-                <label for="name" style="font-size:16px;">Email</label><br>
-                <input type="email" id="name" placeholder="Enter your Email"
-                    style="width:98%; padding:8px; margin-top:6px;">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" placeholder="Enter your Email" required
+                    style="width:100%; padding:8px; margin-top:6px;">
             </div>
+
             <div style="margin-bottom:15px;">
-                <label for="name" style="font-size:16px;">Password</label><br>
-                <input type="password" id="name" placeholder="Enter your Password"
-                    style="width:98%; padding:8px; margin-top:6px;">
+                <label for="password">Password</label><br>
+                <input type="password" id="password" placeholder="Enter your Password" required
+                    style="width:100%; padding:8px; margin-top:6px;">
             </div>
+
             <div style="margin-bottom:15px;">
-                <label for="name" style="font-size:16px;">Mobile Number</label><br>
-                <input type="tel" id="name" placeholder="Enter your Mobile Number"
-                    style="width:98%; padding:8px; margin-top:6px;">
+                <label for="mobile">Mobile Number</label><br>
+                <input type="tel" id="mobile" placeholder="Enter your Mobile Number"
+                    style="width:100%; padding:8px; margin-top:6px;">
             </div>
+
             <div style="margin-bottom:15px;">
-                <label for="name" style="font-size:16px;">Date Of Birth</label><br>
-                <input type="date" id="name" placeholder="Enter your Date Of Birth"
-                    style="width:98%; padding:8px; margin-top:6px;">
+                <label for="dob">Date Of Birth</label><br>
+                <input type="date" id="dob"
+                    style="width:100%; padding:8px; margin-top:6px;">
             </div>
+
             <div style="margin-bottom:20px;">
-                <input type="checkbox" id="terms">
+                <input type="checkbox" id="terms" required>
                 <label for="terms"> I agree to the Terms & Conditions</label>
             </div>
+
             <button type="submit"
-                style="width:100%; padding:10px; background-color:#97A87A; border:none; color:white; font-size:16px; cursor:pointer;">
+                style="width:100%; padding:10px; background-color:#97A87A; border:none; color:white; font-size:16px; cursor:pointer; border-radius:4px;">
                 Submit
             </button>
         </form>
     </div>
-    
-    
-    <footer></footer>
 </body>
 </html>

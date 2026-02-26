@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Job Listings</title>
+</head>
+<body style="margin:0;font-family:Arial;background:#97A87A;min-height:100vh;">
+
+  <div style="padding:20px;background:#A8BBA3;color:white;">
+    <h2>Job Openings</h2>
+  </div>
+
+  <div style="padding:20px;">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search by job title (e.g. SDE 1)"
+      style="padding:8px;width:60%;"
+    />
+    <button
+      onclick="searchJobs()"
+      style="padding:8px 15px;background:#A8BBA3;color:white;border:none;cursor:pointer;"
+    >
+      Search
+    </button>
+  </div>
+
+  <div id="jobContainer" style="padding:20px;"></div>
+
+  <script src="jobpoartal.js"></script>
+</body>
+</html>

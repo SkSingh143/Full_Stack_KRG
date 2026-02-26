@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Job Portal Dashboard</title>
+</head>
+<body style="margin:0;font-family:Arial;background:#97A87A;">
+
+  <div style="background:#A8BBA3;padding:15px;color:white;display:flex;gap:20px;">
+    <button onclick="showProfile()" style="padding:8px;">Create Profile</button>
+    <button onclick="showJobs()" style="padding:8px;">View Jobs</button>
+  </div>
+
+  <div id="profileSection">
+    <iframe src="jobportal.html" style="width:100%;height:90vh;border:none;"></iframe>
+  </div>
+
+  <div id="jobsSection" style="display:none;">
+    <iframe src="jobs.html" style="width:100%;height:90vh;border:none;"></iframe>
+  </div>
+
+  <script src="jobpoartal.js"></script>
+</body>
+</html>
